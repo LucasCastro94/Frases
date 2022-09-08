@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/linerar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/orange">
+
+        <ImageView
+            android:id="@+id/imageMorning"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:src="@drawable/morning"
+            android:layout_weight="1"
+            android:padding="3dp"
+
+            />
+
+
+
+        <ImageView
+            android:id="@+id/imageAfternoon"
+
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:src="@drawable/sunrise"
+            android:layout_weight="1"
+            android:padding="9dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/imageEvening"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:src="@drawable/halfmoon"
+            android:padding="9dp"
+
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linerar1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="nome"
+        android:textSize="18sp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/TextPhrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        android:text="Frase"
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="130dp"
+        android:layout_height="3dp"
+        android:layout_below="@+id/TextPhrase"
+        android:background="@color/orangeSkull"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <Button
+        android:id="@+id/buttonNewPhrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nova frase"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/orangeSkull"
+
+        />
+
+</RelativeLayout>
